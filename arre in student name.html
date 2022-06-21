@@ -1,0 +1,24 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+	<h1 >java script first example</h1>
+	<button id="btn1" onclick="show()">clickme </button>
+    <p id="p1"></p>
+    <script>
+	    function show(){
+	    	document.getElementById("p1").innerHTML=" ";
+	    	var i;
+	        var n=["ram","sayam","gopal","sonu","monu"];
+	        var a=[64,56,87,97,74];
+
+           for(i=0;i<a.length;i++)
+           {
+          document.getElementById("p1").innerHTML+="name of the student  "+n[i]+" "+"and marks are"+a[i]+"<br>";
+
+           }
+        }
+</script>
+</body>
+</html>

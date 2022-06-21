@@ -1,0 +1,665 @@
+<script>
+    
+    function funser()
+    {
+        
+        window.location='http://efixman.com/#services';
+    }
+    
+    function funstore()
+    {
+        window.location='http://efixman.com/#works';
+    }
+    
+    
+</script>   
+      <!DOCTYPE html>
+   <html>
+  
+   <head>
+      <meta charset="UTF-8">
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="shortcut icon" href="https://efixman.com//assets/themes/repairio/assets/images/favicon.html"/>
+      <link rel="stylesheet" href="https://efixman.com//assets/css/bootstrap.css">
+      <script src="https://efixman.com//assets/js/jquery.js"></script>
+
+      <script src="https://efixman.com//assets/js/bootstrap.min.js"></script>
+      
+      <title>E-fixman - Home</title>
+      <style type="text/css" media="screen">
+      .blinking{
+	animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #red;	}
+
+	99%{	color:transparent;	}
+	100%{	color: #red;	}
+}
+
+        body,.cart-heading-margin{
+
+              font-family: "PT Sans Caption",sans-serif !important;
+        }
+       .modal-header{
+          border-bottom: none !important;
+        }
+        .itemCount{
+
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          padding: 8px;
+          background: #fff;
+          border: 2px solid #666;
+          color: #666;
+          text-align: center;
+          top:-11px;
+          position: relative;
+        }
+    
+      .form-control, .btn {
+              min-height: 38px;
+              border-radius: 25px !important;
+              border:2px solid black;
+          }
+          .form-control{
+            padding-left:10px !important;
+            border:2px solid black;
+         }
+          .form-control:focus {
+              border: 2px solid #947054  !important;
+          }
+
+          select.form-control:focus {
+              border: none  !important;
+          }
+          #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active,
+            #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover,
+            body #booked-profile-page input[type=submit].button-primary:hover,
+            body .booked-list-view button.button:hover,
+            body .booked-list-view input[type=submit].button-primary:hover,
+            body table.booked-calendar input[type=submit].button-primary:hover,
+            body .booked-modal input[type=submit].button-primary:hover,
+            body table.booked-calendar th,
+            body table.booked-calendar thead,
+            body table.booked-calendar thead th,
+            body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+            body #booked-profile-page .booked-profile-header,
+            body #booked-profile-page .booked-tabs li.active a,
+            body #booked-profile-page .booked-tabs li.active a:hover,
+            body #booked-profile-page .appt-block .google-cal-button>a:hover,
+            #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header {
+               background: #365769 !important;
+            }
+
+            body #booked-profile-page input[type=submit].button-primary:hover,
+            body table.booked-calendar input[type=submit].button-primary:hover,
+            body .booked-list-view button.button:hover,
+            body .booked-list-view input[type=submit].button-primary:hover,
+            body .booked-modal input[type=submit].button-primary:hover,
+            body table.booked-calendar th,
+            body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+            body #booked-profile-page .booked-profile-header,
+            body #booked-profile-page .appt-block .google-cal-button>a:hover {
+               border-color: #365769 !important;
+            }
+
+            body table.booked-calendar tr.days,
+            body table.booked-calendar tr.days th,
+            body .booked-calendarSwitcher.calendar,
+            body #booked-profile-page .booked-tabs,
+            #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead,
+            #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th {
+               background: #e46d64 !important;
+            }
+
+            body table.booked-calendar tr.days th,
+            body #booked-profile-page .booked-tabs {
+               border-color: #e46d64 !important;
+            }
+
+            #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,
+            #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,
+            body #booked-profile-page input[type=submit].button-primary,
+            body table.booked-calendar input[type=submit].button-primary,
+            body .booked-list-view button.button,
+            body .booked-list-view input[type=submit].button-primary,
+            body .booked-list-view button.button,
+            body .booked-list-view input[type=submit].button-primary,
+            body .booked-modal input[type=submit].button-primary,
+            body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+            body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,
+            body #booked-profile-page .appt-block .google-cal-button>a,
+            body .booked-modal p.booked-title-bar,
+            body table.booked-calendar td:hover .date span,
+            body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+            body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,
+            .booked-ms-modal .booked-book-appt
+            /* Multi-Slot Booking */
+
+            {
+               background: #3a3e4a;
+            }
+
+            body #booked-profile-page input[type=submit].button-primary,
+            body table.booked-calendar input[type=submit].button-primary,
+            body .booked-list-view button.button,
+            body .booked-list-view input[type=submit].button-primary,
+            body .booked-list-view button.button,
+            body .booked-list-view input[type=submit].button-primary,
+            body .booked-modal input[type=submit].button-primary,
+            body #booked-profile-page .appt-block .google-cal-button>a,
+            body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+            body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+            body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover {
+               border-color: #3a3e4a;
+            }
+
+            body .booked-modal .bm-window p i.fa,
+            body .booked-modal .bm-window a,
+            body .booked-appt-list .booked-public-appointment-title,
+            body .booked-modal .bm-window p.appointment-title,
+            .booked-ms-modal.visible:hover .booked-book-appt {
+               color: #3a3e4a;
+            }
+
+            .booked-appt-list .timeslot.has-title .booked-public-appointment-title {
+               color: inherit;
+            }
+
+             .modal-header .close{
+                margin: 0 !important;
+                position: absolute;
+                top: -11px;
+                right: -10px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: radial-gradient(#FFC107, transparent);
+                background-color: #FFC107;
+                color: #fff;
+                opacity: 1;
+                z-index: 10;
+                padding: 2px !important;
+      
+             }
+              .btn-outline-google-plus {
+
+                     color:#dd4b39 !important;
+                     border-color: #dd4b39 !important;
+                  }
+                .btn-outline-google-plus:hover {
+                     color: #fff !important;
+                     background-color: #dd4b39;
+                  }
+                   .btn-outline-facebook {
+                     color: #3B5998;
+                     border-color: #3B5998 !important;
+                  }
+                  .btn-outline-facebook:hover {
+                     color: #fff !important;
+                     background-color: #3B5998;
+                  }
+                  .icon{
+                    float: left;
+                    top: 7px;
+                    position: relative;
+                  }
+
+                  .card-body{
+
+                        background: radial-gradient(#0a0ae8, transparent);
+                  }
+                  .or-seperator {
+                      margin: 20px 0 10px;
+                      text-align: center;
+                      border-top: 1px solid #ccc;
+                   }
+
+                   .or-seperator i {
+                      padding: 0 10px;
+                      background: #fff;
+                      position: relative;
+                      top: -11px;
+                      z-index: 1;
+                    }
+                    .error{
+                      color:red;
+                      margin-top:6px;
+                    }
+                    .error_message{
+                      color:red;
+
+                    }
+                    select:focus, select.form-control:focus,input:focus, input.form-control:focus {
+
+                      outline:none !important;
+                      outline-width: 0 !important;
+                      box-shadow: none;
+                      -moz-box-shadow: none;
+                      -webkit-box-shadow: none;
+                       transition: color 0.25s;
+
+ 
+                    }  
+
+
+      </style>
+      <link rel='dns-prefetch' href='http://s.w.org/' />
+      <link rel="alternate" type="application/rss+xml" title="Repair &raquo; Feed" href="feed/index.html" />
+      <link rel="alternate" type="application/rss+xml" title="Repair &raquo; Comments Feed" href="comments/feed/index.html" />
+      
+      <style type="text/css">img.wp-smiley,img.emoji {display: inline !important;border: none !important;box-shadow: none !important;height: 1em !important;width: 1em !important;margin: 0 .07em !important;vertical-align: -0.1em !important;background: none !important;padding: 0 !important;}</style>
+      <link rel='stylesheet' id='formidable-css' href='https://efixman.com//assets/plugins/formidable/css/formidableformsc3f8.css?ver=522548' type='text/css' media='all' />
+      <link rel='stylesheet' id='wp-block-library-css' href='https://efixman.com//assets/css/dist/block-library/style.min7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='wc-block-style-css' href='https://efixman.com//assets/plugins/woocommerce/assets/css/blocks/stylea767.css?ver=3.6.3' type='text/css' media='all' />
+      <link rel='stylesheet' id='booked-icons-css' href='https://efixman.com//assets/plugins/Booked_v1.9/assets/css/icons53cf.css?ver=2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='booked-tooltipster-css' href='https://efixman.com//assets/plugins/Booked_v1.9/assets/js/tooltipster/css/tooltipster9b70.css?ver=3.3.0' type='text/css' media='all' />
+      <link rel='stylesheet' id='booked-tooltipster-theme-css' href='https://efixman.com//assets/plugins/Booked_v1.9/assets/js/tooltipster/css/themes/tooltipster-light9b70.css?ver=3.3.0' type='text/css' media='all' />
+      <link rel='stylesheet' id='booked-animations-css' href='https://efixman.com//assets/plugins/Booked_v1.9/assets/css/animations53cf.css?ver=2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='booked-styles-css' href='https://efixman.com//assets/plugins/Booked_v1.9/assets/css/styles53cf.css?ver=2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='booked-responsive-css' href='https://efixman.com//assets/plugins/Booked_v1.9/assets/css/responsive53cf.css?ver=2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='woocommerce-layout-css' href='https://efixman.com//assets/plugins/woocommerce/assets/css/woocommerce-layouta767.css?ver=3.6.3' type='text/css' media='all' />
+      <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://efixman.com//assets/plugins/woocommerce/assets/css/woocommerce-smallscreena767.css?ver=3.6.3' type='text/css' media='only screen and (max-width: 768px)' />
+      <link rel='stylesheet' id='woocommerce-general-css' href='https://efixman.com//assets/plugins/woocommerce/assets/css/woocommercea767.css?ver=3.6.3' type='text/css' media='all' />
+      <style id='woocommerce-inline-inline-css' type='text/css'>.woocommerce form .form-row .required { visibility: visible; }</style>
+      <link rel='stylesheet' id='aos-css-css' href='https://efixman.com//assets/themes/repairio/assets/css/aos7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='repairio-css-css' href='https://efixman.com//assets/themes/repairio/style7752.css?ver=5.2.1' type='text/css' media='all' />
+      
+
+      <link rel='stylesheet' id='swiper-css' href='https://efixman.com//assets/themes/repairio/assets/css/idangerous.swiper7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='magnific-css' href='https://efixman.com//assets/themes/repairio/assets/css/magnific-popup7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='font-awesomes-css' href='https://efixman.com//assets/themes/repairio/assets/css/font-awesome.min7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='animate-css' href='https://efixman.com//assets/themes/repairio/assets/css/animate7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='repairio-font-icon-css' href='https://efixman.com//assets/themes/repairio/assets/css/lx-iconset7752.css?ver=5.2.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='repairio-main-css-css' href='https://efixman.com//assets/themes/repairio/assets/css/styled556.css?ver=1560771673' type='text/css' media='all' />
+      <link rel='stylesheet' id='repairio-unit-test-css' href='https://efixman.com//assets/themes/repairio/assets/css/unit-testd556.css?ver=1560771673' type='text/css' media='all' />
+      <link rel='stylesheet' id='repairio_dynamic_css-css' href='https://efixman.com//assets/admin-ajax2f8e.css?action=repairio_dynamic_css&amp;ver=1.0' type='text/css' media='all' />
+      <link rel='stylesheet' id='repairio_woocommerce_style-css' href='https://efixman.com//assets/themes/repairio/woocommerce-supportd556.css?ver=1560771673' type='text/css' media='all' />
+      <link rel='stylesheet' id='js_composer_front-css' href='https://efixman.com//assets/plugins/js_composer/assets/css/js_composer.min0147.css?ver=4.12' type='text/css' media='all' />
+      <script type='text/javascript' src='https://efixman.com//assets/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script><script type='text/javascript' src='https://efixman.com//assets/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script><script type='text/javascript' src='https://efixman.com//assets/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script><script type='text/javascript'>/* <![CDATA[ *//* ]]> */</script><script type='text/javascript' src='https://efixman.com//assets/plugins/woocommerce/assets/js/frontend/add-to-cart.mina767.js?ver=3.6.3'></script><script type='text/javascript' src='https://efixman.com//assets/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart0147.js?ver=4.12'></script>
+      <link rel='https://api.w.org/' href='wp-json/index.html' />
+      <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+      <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://efixman.com//assets/wlwmanifest.xml" />
+      <meta name="generator" content="WordPress 5.2.1" />
+      <meta name="generator" content="WooCommerce 3.6.3" />
+      <link rel="canonical" href="index.html" />
+      <link rel='shortlink' href='index.html' />
+     
+     
+      
+      <noscript>
+         <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
+      </noscript>
+      <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+    
+      <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1504533979675{background-image: url(https://efixman.com//assets/uploads/2016/11/banner-toped0e.jpg?id=5133) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1493381241725{padding-top: 0px !important;}.vc_custom_1497699491855{margin-top: 15px !important;}</style>
+      <noscript>
+         <style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style>
+      </noscript>
+   </head>
+
+   <body class="home page-template-default page page-id-383 woocommerce-no-js wpb-js-composer js-comp-ver-4.12 vc_responsive">
+      <!--==========HEADER============--> 
+      <header class="lx-header"> 
+         <div class="container no-padd-h">
+            <div class="lx-btn-menu hidden-md hidden-lg"> <i class="burger-button"></i> </div>
+            <div class="lx-logo"> <a href="https://efixman.com/"> <img src=https://efixman.com//assets/uploads/2017/09/logo-repario.png alt=""> </a> </div>
+            <nav class="lx-main-menu">
+                <ul id="menu-menu-1" class="menu">
+                    <!--<li  id="menu-item-4994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-383 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-4994 page-scroll"><a  data-toggle="dropdown" class="anchor-scroll" href="#home-main">Home</a>
+
+</li> -->
+<li  id="menu-item-4994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008 page-scroll"><a  class="anchor-scroll" style="Color:red;font-size:22px;font-weight:bold;" href="https://efixman.com//guest/offer"><span class="blinking">Offer Zone</span></a></li>
+<li  id="menu-item-5008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008 page-scroll"><a  class="anchor-scroll" href="#about">About</a>
+
+<ul class="sub-menu">
+	<li  id="menu-item-4698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-383 current_page_item menu-item-4698 page-scroll"><a  class="anchor-scroll" href="https://efixman.com//guest/whyus">Why us</a></li>
+	<li  id="menu-item-4995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4995 page-scroll"><a   href="https://efixman.com//guest/faq" >FAQ</a></li>
+	<li  id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996 page-scroll"><a   href="https://efixman.com//guest/terms" >Terms and Condition</a></li>
+	<li  id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996 page-scroll"><a   href="https://efixman.com//guest/gallery" >Gallery</a></li>
+	<li  id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996 page-scroll"><a   href="https://efixman.com//guest/career" >Career</a></li>
+	
+</ul>
+
+</li>
+<li  id="menu-item-5008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008 page-scroll"><a  class="anchor-scroll" onclick="funser()" style="color:#bfbab0;">Services</a></li>
+<li  id="menu-item-5010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5010 page-scroll"><a  class="anchor-scroll" href="#repairs">Frenchise</a>
+
+<ul class="sub-menu">
+	<li  id="menu-item-4698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-383 current_page_item menu-item-4698 page-scroll"><a  class="anchor-scroll" href="https://efixman.com//guest/frenchise">Apply for Frenchise  </a></li>
+	<li  id="menu-item-4995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4995 page-scroll"><a   href="https://efixman.com//guest/service" >Apply for Service Partner</a></li>
+
+	
+</ul>
+
+
+</li>
+
+
+
+<li  id="menu-item-4823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4823 page-scroll"  ><a  class="anchor-scroll"  onclick="funstore()" style="color:#bfbab0;" >Stores</a></li>
+
+<li  id="menu-item-5008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008 page-scroll"><a  class="anchor-scroll" href="https://efixman.com//guest/contact">Contact us</a></li>
+
+                  <li id='menu-item-4703' class='menu-item menu-item-type-post_type menu-item-object-page menu-item-4703 page-scroll '><a class='anchor-scroll' href='https://efixman.com//customer/login'>Login</a></li>
+                        <li id='menu-item-4703' class='menu-item menu-item-type-post_type menu-item-object-page menu-item-4703 page-scroll  '><a class='anchor-scroll' href='https://efixman.com//customer/register'>Register</a></li>                  <li style="margin-top: 2px;"  id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4702 page-scroll"><a class="anchor-scroll" href="https://efixman.com/guest/viewCart"><i class="fa fa-shopping-cart"></i><span class="totalItem itemCount">0</span></a></li>
+</ul>
+</nav>
+         </div>
+      </header><style type="text/css">
+
+  
+.column p
+{
+   margin:0 !important; 
+   font-size:14px;
+  word-spacing: normal;
+    
+}
+
+.column span
+{
+    color:orange;
+    
+}
+    
+    
+</style>
+ <link rel='stylesheet' id='font-awesomes-css' href='http://efixman.com//assets/themes/repairio/assets/css/font-awesome.min7752.css?ver=5.2.1' type='text/css' media='all' />
+<div id="about" class="container one-page-wrapper;">
+      <div class="vc_row wpb_row vc_row-fluid marg-md-t60 marg-md-b10 marg-sm-t55 marg-sm-b5 marg-xs-t35 marg-xs-b0 "><div class="wpb_column vc_column_container vc_col-sm-12 "><div class="vc_column-inner  ">
+                        <div class="wpb_wrapper">
+                            <div class="lx_mobiles lx_repairio  repairio_heading              dark   text-center" style="background-color:;" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="container-fluid" >
+                                   <div style="justify-content: center;padding-top:30px;">
+                                     
+                                       <center> <h3 class="title medium" >WHY US?</h3></center>
+
+</div>
+                         <div class="row">
+  <div class="column">
+      <span style='font-size:20px;'> Free Pick-Up and Drop</span>
+      
+      <p align="justify">As the Digital India moves forward this is our step to make our service available at your doorstep.Yes,we provide Free Pic-up and Delivery at your Doorstep.</p>
+  </div>
+  <div class="column">
+      <span style='font-size:20px;'>Stand-By Mobile </span><p align="justify"> To keep you up in this digital world, even when your cellphone is sick,is our responsibility. We provide you with a stand by device so that you will be connected with your loved ones while we service your device.</p>
+      
+  </div>
+  <div class="column">
+      <span style='font-size:20px;'>3 Month Warranty </span><p align="justify">To make sure our services are at its best. We provide a 3 Months warranty on the service we have provided.</p>
+      
+  </div>
+  
+  <div class="column">
+      <span style='font-size:20px;'>“Availability” as a Friend</span> <p  align="justify"> We will always be there to assist with all our efficiency and expertise <span style='color:orange;'>24 x 7 x 365.</span> We are just a phone call away!!</p>
+      
+  </div>
+  </div>
+<div class="row">
+  <div class="column"><span style='font-size:20px;'>Pay on Delivery </span><p align="justify"> In order to make the service easier for all our customers, we give them with the options to make payment on delivery of your device.</p></div>
+
+  <div class="column">
+      <span style='font-size:20px;'>One Day Repair </span><p align="justify">  As we know,how much important it is for our customers to get the service/repair done ASAP. We are hence providing you the quickest turn aroundof <span style='color:orange;'>1 DAY</span> only</p>
+      
+  </div>
+  
+  <div class="column">
+      <span style='font-size:20px;'>Data Security</span> <p align="justify"> Your data is secure as long as it is on our custody.We ensure that your data is 100% safe and no data breaches.</p>
+      
+  </div>
+  <div class="column">
+      <span style='font-size:20px;'>Unbeatable Price </span><p align="justify">  We at EFIXMAN believes in honest prices and we assure you to get the service done in the best price with our Service warranty of 3 months.</p>
+      
+  </div>
+</div>
+                         
+                         <!--
+                        <div class="vc_row wpb_row vc_inner vc_row-fluid marg-md-t90 marg-md-b115 marg-sm-t65 marg-sm-b80 marg-xs-t35 marg-xs-b35">
+                           <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 ">
+                              <div class="vc_column-inner vc_custom_1480678603788 marg-md-t30 marg-sm-t25 marg-xs-t20">
+                                 <div class="wpb_wrapper text-left text-md-left">
+                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                       <figure class="wpb_wrapper vc_figure">
+                                          <div class="vc_single_image-wrapper vc_box_border_grey"><img width="371" height="600" src="https://efixman.com//assets//wp-content/uploads/2017/06/about.png" class="vc_single_image-img attachment-full" alt=""  /></div>
+                                       </figure>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-md-8 ">
+                              <div class="vc_column-inner marg-md-t15 marg-sm-t5 marg-xs-t5">
+                                 <div class="wpb_wrapper text-left text-md-left">
+                                    <div class="lx_mobiles lx_repairio repairio_heading light left-space" style="background-color:;" data-aos="fade-up" data-aos-duration="1000">
+                                       <div class="container-fluid">
+                                          <div class="row">
+                                             <div class=" col-xs-12 ">
+                                              
+                                               
+                                                <div class="desc">
+                                                   <p align="justify"><span style='font-size:24px;'>Why Us </span> - With our Experienced and Extremely knowledgeable team we assure the best service in the industry. Our professional engineers have in-depth knowledge and hands-on with latest technologies and devices..</p>
+                                                   
+                                                <p align="justify">  <span style='font-size:24px;'> Free Pick-Up and Drop</span> -  As the Digital India moves forward this is our step to make our service available at your doorstep. Yes, we provide Free Pick-up and Delivery at your Doorstep.</p>
+
+<p align="justify"><span style='font-size:24px;'>3 Month Warranty </span>– To make sure our services are at its best. We provide a 3 Months warranty on the service we have provided.</p>
+
+<p align="justify"><span style='font-size:24px;'>Stand-By Mobile </span>– To keep you up in this digital world, even when your cellphone is sick, is our responsibility. We provide you with a stand by device so that you will be connected with your loved ones while we service your device.</p>
+
+<p align="justify"><span style='font-size:24px;'>Cash on Delivery/ Pay on Delivery </span>-  In order to make the service easier for all our customers, we give them with the options to make payment on delivery of your device.</p>
+
+<p align="justify"><span style='font-size:24px;'>One Day Repair </span>-  As we know, how much important it is for our customers to get the service/repair done ASAP. We are hence providing you the quickest turn aroundof 1 DAY only.</p>
+
+<p align="justify"><span style='font-size:24px;'>“Availability” as a Friend by you side</span> -  We will always be there to assist with all our efficiency and expertise 24 x 7 x 365. We are just a phone call away!!</p>
+
+<p align="justify"><span style='font-size:24px;'>Unbeatable Price </span>-  We at <> believes in honest prices and we assure you to get the service done in the best price with our Service warranty of 3 months.</p>
+
+                                                   
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     
+                     
+                     
+                     
+                     
+                     -->
+                     
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="vc_row-full-width"></div>
+   </div><!-- FOOTER -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+footer h2
+{
+    color:orange;
+    font-size:22px;
+}
+footer p
+{
+    color:white;
+}
+footer ul li
+{
+    list-style-type: none;
+}
+footer a
+{
+    color:white;
+    text-decoration: none;
+   
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<footer class="lx-footer ">
+   <div class="container">
+     <div class="row">
+  <div class="column" >
+    <h2>Subscribe to Newsletter</h2>
+    <p><input type="text" placeholder="enter email" style="background-color:white;width:200px;height:30px; border-radius:5px;color:black;" /></p>
+    <br>
+  
+    <p><input type="button" value="subscribe" style="background-color:orange;width:130px;color:black;height:30px;border-radius:10px;" ></inpu></p>
+    
+  </div>
+  <div class="column" >
+    <h2>QUICK LINKS</h2>
+    <ul>
+        <li><a href="#about">About us</a></li>
+        <li><a href="http://efixman.com//guest/career">Career</a></li>
+        <li><a href="#home-main">Book a Repair</a></li>
+        <li><a href="http://efixman.com//guest/gallery">Gallery</a></li>
+        <li><a href="http://efixman.com//guest/contact">Contact us</a></li>
+        
+    </ul>
+  </div>
+  <div class="column" >
+    <h2>INFORMATION</h2>
+    <ul>
+        <li><a href="http://efixman.com//guest/faq" style="list-style-type: none;">FAQ</a></li>
+        <li><a href="http://efixman.com//guest/terms">TERMS AND CONDITION</a></li>
+        <li><a href="#locators">STORE LOCATORS</a></li>
+        <li><a href="">BLOG</a></li>
+        <li><a href="">MAGZINE</a></li>
+        
+    </ul>
+  </div>
+  <div class="column" >
+    <h2>CONNECT WITH US</h2>
+    <p style="color:orange;">EFIXMAN</p>
+    <p>LG-5 SUNRISE TOWER</p>
+    <p>579 MG-ROAD</p>
+     <p>INDORE(452001)</p>
+     <p style="color:orange;">9111196669,9111169996</p>
+    <p><a href="http://www.fb.com/efixmanindia"><i class="fa fa-facebook-f" style="font-size:32px;color:red"></i></a> 
+    <a href="http://www.twitter.com/efixmanindia"><i class="fa fa-twitter" style="font-size:32px;color:red"></i></a> &nbsp; <a href="https://www.instagram.com/efixman"><i class="fa fa-instagram" style="font-size:32px;color:red"> </i></a></p>
+  </div>
+</div>
+   </div>
+</footer>
+ <style>.pagemenu-hide{display:none !important;}</style> <script type="text/javascript">
+    var c = document.body.className;
+    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+    document.body.className = c;
+  </script>
+  <link rel='stylesheet' id='font-awesome-css'  href='https://efixman.com//assets/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min0147.css?ver=4.12' type='text/css' media='all' />
+<script type='text/javascript' src='https://efixman.com//assets/wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-includes/js/jquery/ui/datepicker.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"dd.mm.yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/Booked_v1.9/assets/js/spin.min7406.js?ver=2.0.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/Booked_v1.9/assets/js/spin.jquery7406.js?ver=2.0.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/Booked_v1.9/assets/js/tooltipster/js/jquery.tooltipster.min9b70.js?ver=3.3.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var booked_js_vars = {"ajax_url":"http:\/\/w2.themedemo.co\/repairio\/wp-admin\/admin-ajax.php","profilePage":"","publicAppointments":"","i18n_confirm_appt_delete":"Are you sure you want to cancel this appointment?","i18n_please_wait":"Please wait ...","i18n_wrong_username_pass":"Wrong username\/password combination.","i18n_fill_out_required_fields":"Please fill out all required fields.","i18n_guest_appt_required_fields":"Please enter your name to book an appointment.","i18n_appt_required_fields":"Please enter your name, your email address and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fields.","i18n_password_reset":"Please check your email for instructions on resetting your password.","i18n_password_reset_error":"That username or email is not recognized."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/Booked_v1.9/assets/js/functions53cf.js?ver=2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/repairio\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/repairio\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.mina767.js?ver=3.6.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/repairio\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/repairio\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_e5206c66f9ce2d614a0429ccafe5bc3e","fragment_name":"wc_fragments_e5206c66f9ce2d614a0429ccafe5bc3e","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.mina767.js?ver=3.6.3'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/jquery.fitvids7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/aos7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/idangerous.swiper.min7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/jquery.countTo7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/isotope.pkgd.min7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/equalHeightsPlugin7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/jquery.lettering7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/jquery.magnific-popup.min7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/textillate7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/themes/repairio/assets/js/globald556.js?ver=1560771673'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-includes/js/comment-reply.min7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-includes/js/wp-embed.min7752.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min0147.js?ver=4.12'></script>
+<script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?v=3.25&amp;key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;language=en&amp;ver=5.2.1'></script>
+
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/upqode-google-maps/public/js/gm_addons_script7752.js?ver=5.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var frm_js = {"ajax_url":"http:\/\/w2.themedemo.co\/repairio\/wp-admin\/admin-ajax.php","images_url":"http:\/\/w2.themedemo.co\/repairio\/wp-content\/plugins\/formidable\/images","loading":"Loading\u2026","remove":"Remove","offset":"4","nonce":"fde06d7793","id":"ID","no_results":"No results match","file_spam":"That file looks like Spam.","calc_error":"There is an error in the calculation in the field with key","empty_fields":"Please complete the preceding required fields before uploading a file."};
+/* ]]> */
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://efixman.com//assets/wp-content/plugins/formidable/js/frm.minf9b8.js?ver=4.0'></script>
+  <script type="text/javascript">
+   
+   $(document).ready(function()
+  {
+    /*$(".lx-btn-menu").click(function(){
+          $(".menu").show();
+    });
+
+    $(".anchor-scroll").click(function(){
+          $(".menu").toggle();
+    });*/
+
+     $(window).on('unload',function(){
+      // alert('bye')  
+})
+
+      $("#frenchiseForm").on("submit",function(e){
+            e.preventDefault();
+        });
+      
+  });
+     function logout()
+     {
+            var url="https://efixman.com/";
+            if(confirm("Do you want to logout ?")){
+              var r = url+"customer/logout";
+              window.location.href= r;
+             }
+     }
+  </script>
+</body>
+</html>    

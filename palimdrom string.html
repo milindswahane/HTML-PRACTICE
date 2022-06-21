@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+Enter any string :<input type="text" id="a" ><br>
+
+<button id="btn1" onclick="al()">show</button>
+
+
+<p id="b"></p>
+<script>
+   function al()
+ {
+ 	
+ 	var x=document.getElementById("a").value;
+ 	var y="";
+ 	for(i=x.length-1;i>=0;i--)
+    {
+      y=y+x[i];
+    }
+    if(x==y)
+ 	
+     document.write("palindrome") 
+   else
+     document.write("not a palindrome")
+ }
+
+</script>
+</body>	
+</html>

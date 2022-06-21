@@ -1,0 +1,63 @@
+<html>
+<head>
+    <style>
+#div1{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.img{
+    display: block;
+    width: 600px;
+    height: 500px;
+}
+#div2{
+    font-size: 1cm;
+    font-weight:bold;
+}
+#p1{
+    font-size: 0.75cm;
+    margin-top: 0.25cm;
+}
+#div3{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 80%;
+    height: 80%;
+    background-image: url("images (1).jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background: no-repeat;
+}
+#div3:hover{
+    opacity: 1;
+
+}
+
+</style>
+
+</head>
+<script type="text/javascript">
+function image() {
+    var src = img.src;
+    window.open(src);
+}
+</script>
+
+<body>
+    <div id="div1">
+        <img class="img" src="school.jpg">
+        <div id="div3">
+        <div id="div2">Welcome</div>
+        <p id="p1">
+            Welcome to my school.
+        </p>
+    </div>
+
+</body>
+</html>

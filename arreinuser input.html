@@ -1,0 +1,32 @@
+<html>
+<head>
+<tital>
+</tital>
+</head>
+<body>
+      <h2 id="id1">javascript first example</h2>
+      <input type="text" id="txt1" placeholder="name"><br>
+      <input type="text" id="txt2" placeholder="marks"><br>
+  
+      <button id="btn1" onclick="show()">clickme</button>
+      <p id="p1"></p>
+<script>
+      var i=0;
+      var n=[];
+      var a=[];
+      function show()
+        {
+        	document.getElementById("p1").innerHTML=" ";
+                    n[i]=document.getElementById("txt1").value;
+                    a[i]=parseInt(document.getElementById("txt2").value);
+                    document.getElementById("txt1").value=" ";
+                    document.getElementById("txt2").value=" ";
+                   for(i=0;i<a.length;i++)
+                    {
+                    	document.getElementById("p1").innerHTML+="name of student is "+n[i]+"and marks are "+a[i]+"<br>";      
+
+                    }
+        }
+  </script>
+</body>
+</html>

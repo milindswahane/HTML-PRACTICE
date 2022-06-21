@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="txt1" placholder="name">
+<input type="text" id="txt2" placholder="marks">
+<button id="btn1" onclick="al()">show</button>
+<p id="p1"></p>
+<script>
+var i=0;
+var st=[]
+function student(f,m)
+{   this .fname=f;
+     this.marks=m;
+     }
+ function al()
+ {
+ 	document.getElementById("p1").innerHTML="";
+ 	var x=document.getElementById("txt1").value;
+ 	var y=document.getElementById("txt2").value;
+ 	st[i]=new student(x,y)
+ 	i++
+    for (k=0,st.length,k++)
+ 	{
+     document.getElementById("p1").innerHTML+=st[k].fname+" "st[k].marks+"<br>";
+ 	}
+ }
+</script>
+</body>	
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body bgcolor="pink"><center>
+	<h2>STUDENT RECORD</h2>
+ Name:<input type="text" id="txtName">   
+ Class:<input type="text" id="txtClass"> <br/><br/>
+    <table border="1">
+    <tr><td>HINDI</td>
+    	<td><input type="text" id="txthindi"></td></tr>
+    <tr><td>ENGLISH</td>
+    	<td><input type="text" id="txtenglish"></td></tr>
+    <tr><td>PHYSICS</td>
+    	<td><input type="text" id="txtphysics"></td></tr>
+    <tr><td>CHEMISTRY</td>
+    	<td><input type="text" id="txtChemistry"></td></tr>
+    <tr><td>MATHEMATICS</td>
+    	<td><input type="text" id="txtmath"></td></tr>             
+    </table><br/><br/>
+    <input type="button" value="Get Result" onclick="show()">
+
+    <h2>Report Card</h2>
+            
+            <table border="1">
+                <tr><td>Name</td><td><input type="text" id="txtStudentName" >
+                </td></tr>
+                <tr><td>Class</td><td><input type="text" id="txtStudentClass" >
+                </td></tr>
+                <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" ></td></tr>
+                <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" ></td></tr>
+                <tr><td>Grade</td><td><input type="text" id="txtp3" ></td></tr>
+            </table>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+	<script>
+		function show()
+		 {
+			
+		
+		var grade = "txtp3";  
+        var  result=""; 
+            var HINDI = parseInt(document.getElementById('txthindi').value);
+            var ENGLISH = parseInt(document.getElementById('txtenglish').value);
+            var PHYSICS = parseInt(document.getElementById('txtphysics').value);
+            var CHEMISTRY = parseInt(document.getElementById('txtChemistry').value);
+            var MATHEMATICS = parseInt(document.getElementById('txtmath').value);
+             var totalMarks = HINDI + ENGLISH + PHYSICS + CHEMISTRY + MATHEMATICS;
+        
+            var averageMarks = totalMarks / 5; 
+
+            if(averageMarks>75)
+            {
+                
+                document.getElementById("p3").innerHTML=averageMarks+"<p>pass gread dict</p>";
+            }
+            
+            else if(averageMarks>60)
+            {
+                
+                
+                    document.getElementById("p3").innerHTML=averageMarks+"<p>pass gread a</p>";
+                
+                }
+                else if(averageMarks>45)
+                {
+                    
+                    
+                        document.getElementById("p3").innerHTML=averageMarks+"<p>pass gread b</p>";
+                    }
+                    else  if(averageMarks>33)
+                    {
+                       
+                        
+                            document.getElementById("p3").innerHTML=averageMarks+"<p> gread c</p>";
+
+                        }
+                        else
+                        {
+                            document.getElementById("p3").innerHTML=averageMarksz8+"<p> fail</p>";
+                        }
+                    
+                
+            
+        
+
+            
+        
+        
+              
+				
+
+		document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
+        document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
+        document.getElementById('txtTotalMarks').value = totalMarks;
+        document.getElementById('txtAvgMarks').value = averageMarks;
+        document.getElementById('txtp3').value = document.getElementById('txtp3').value;
+        
+
+			  
+		}
+		
+
+
+    </script>
+</center>
+</body>
+</html>

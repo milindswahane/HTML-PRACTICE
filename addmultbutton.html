@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+     <input type="text" id="text1">
+<button id="btn1" onclick="add()">plus</button>
+<input type="text" id="text2">
+<button id="btn2" onclick="mult()">multiply</button>
+<button id="btn3" onclick="clear1()">clearme</button>
+<p id="p1"></p>
+<script>
+	
+	var a;
+	var b;
+	var c;
+	function clear1()
+	{
+		document.getElementById("text1").value=' ';
+	    document.getElementById("text2").value=' ';
+	}
+	function add()
+	{
+		a=parseInt(document.getElementById("text1").value);
+	    b=parseInt(document.getElementById("text2").value);
+	    c=a+b;
+	    document.getElementById("p1").innerHTML=c;
+    }
+    function mult()
+    {
+    	a=parseInt(document.getElementById("text1").value)
+	    b=parseInt(document.getElementById("text2").value)
+	    c=a*b;
+	    document.getElementById("p1").innerHTML=c;
+    }
+</script>
+</body>
+</html>

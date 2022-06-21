@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body bgcolor="pink"><center>
+    <h2>STUDENT DETEAL</h2>
+Student Name:<input type="text" id="text1" placeholder="enter the name"/>
+    <br><br>
+ Student Rno:<input type="text" id="text2" placeholder="enter rno."/><br><br>
+     Student Mark:<input type="text" id="text3" placeholder="enter no."/><br><br>
+       <button id="btn1" onclick="add()">add</button>
+       <button id="btn1" onclick="showprev()">previous</button>
+       <button id="btn1" onclick="next()">next</button>
+       <button id="btn1" onclick="showall()">all</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+
+        var stname=[];
+        var smarks=[];
+        var srono=[];
+        var i=0;
+        function print()
+        {
+            var x=document.getElementById('text1').value;
+            var y=document.getElementById('text2').value;
+            var z=document.getElementById('text3').value;
+
+            
+
+           if(z>75)
+            {
+                
+                document.getElementById("p3").innerHTML=z+"<p>pass gread dict</p>";
+            }
+            
+            else 
+            {
+                if(z>60)
+                {
+                    document.getElementById("gread a").innerHTML=z+"<p>pass gread a</p>";
+                }
+                else
+                {
+                    if(z>45)
+                    {
+                        document.getElementById("p3").innerHTML=z+"<p>pass gread b</p>";
+                    }
+                    else
+                    {
+                        if(z>33)
+                        {
+                            document.getElementById("p3").innerHTML=z+"<p>pass gread c</p>";
+
+                        }
+                        else
+                        {
+                            document.getElementById("p3").innerHTML=z+"<p>fail</p>";
+                        }
+                    }
+                }
+            }
+        
+
+            document.getElementById("p1").innerHTML=x
+            document.getElementById("p2").innerHTML=y
+            
+        }
+     function add()
+        {
+            i=stname.length;
+        stname[i]=document.getElementById("text1").value; 
+        smarks[i]=document.getElementById("text1").value;
+        srono[i]=document.getElementById("text1").value;
+
+         }
+    function shownext()
+
+        {
+           if(stname[i+1]!=undefined)
+           { i++;
+             document.getElementById("text1").value=stname
+              document.getElementById("text2").value=stmark
+               document.getElementById("text3").value=srono
+           }
+         } 
+    function showprev()
+        {  if(stname[i-1]!=undefined)
+        { i--;
+            document.getElementById("p1").innerHTML+=stname[k]+"";
+            document.getElementById("p1").innerHTML+=stmarks[k]+"";
+            document.getElementById("p1").innerHTML+=srono[k]+"";
+         }    
+    }
+
+    </script>
+</center>
+</body>
+</html>
